@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Cello</title>
+    </head>
+    <body>
+        <div class="main">
+            <!-- Include header from external file -->
+            <div id="jumbotron">
+                <script>
+                    fetch("header.html")
+                      .then(response => response.text())
+                      .then(data => {
+                        document.getElementById("jumbotron").innerHTML = data;
+                  
+                        // Highlight the current tab
+                        const links = document.querySelectorAll('#jumbotron a');
+                        links.forEach(link => {
+                          if (link.href === window.location.href) {
+                            link.classList.add('active');
+                          }
+                        });
+                      });
+                  </script>
+            </div>
+            <div id="sidebar">
+                <img src="/carnegie.jpg" alt="Playing at Carnegie Hall">
+                <ul style="padding:10px 0 0 0">
+                    <li>
+                        <h4>
+                            Links:
+                        </h4>
+                        <p style="margin:0;padding:0">
+                             Dvorak Cello Concerto Movements <a href="https://www.youtube.com/watch?v=qQL9ApVEGiY">I</a>, <a href="https://www.youtube.com/watch?v=mxjUIqwsyoE">II</a>, and <a href="https://www.youtube.com/watch?v=i4S7-MwYQsk">III</a>.
+                        </p>
+                        <p style="margin:0;padding:0">
+                            Bach Suite No. 4
+                        </p>
+                            <ul>
+                                <li>
+                                    <a href="https://www.youtube.com/watch?v=5bXFWYS6LVs">Prelude</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/watch?v=XN_jdl-Md2w">Allemande</a>
+                                </li>
+                            </ul>
+                        <p style="margin:0;padding:0">Dvorak <a href="https://youtu.be/vSupUz8b78U?feature=shared&t=1232">Piano Trio No. 4 in E minor, "Dumky"</a> with Eloise Hodges and Lewis Zou</p>
+                        <p style="margin:0;padding:0">Bartok <a href="https://youtu.be/Or90RmaHziA?feature=shared&t=1647">String Quartet No. 4</a> with Ethan Chaves, Sophie Choate, and Dacha Thurber</p> 
+                        <p style="margin:0;padding:0">Brahms <a href="https://www.youtube.com/live/ruQE9U9KaC8?feature=shared&t=5936">Piano Trio No. 1 in B Major</a> with Christian Chiu and Dacha Thurber</p> 
+                        <p style="margin:0;padding:0">A "<a href="https://youtu.be/0593w7LKx9A">junior recital</a>" with Christian Chiu.</p>
+                    </li>
+                </ul>
+            </div>
+            <div id="content">
+                <h2>About</h2>
+                <p>I have loved playing the cello since age 4. Currently, I study with Kee Kim of the Parker Quartet at Harvard.</p>
+                <p>My past teachers have included Matthew Zalkind, Timothy Eddy, Hans Jørgen Jensen, Steven Doane, Rosemary Elliott, Amit Peled, Jonathan Koh, Jurgen de Lemos, Silver Ainomae, Claudio Pasceri, and Rainer Eudeikis.</p>
+                <p>Below is a video of some of my more recent playing, and the sidebar contains links to other recordings I have made. A more complete list can be found on my <a href="https://www.youtube.com/channel/UC4RjvUNf1xYRiwMapqwXTmQ">YouTube channel</a>. I have also compiled <a href="rep.pdf">a list</a> of the major solo and chamber repertoire I have played. Additionally, I have listed past summer festivals below.</p>
+                <h2>Summer Festivals</h2>
+                <h3>Green Mountain Music Festival, Summer 2020.</h3>
+                <p>Participated in festival as student of Matthew Zalkind. Performed for Clive Greensmith masterclass.</p>
+                <h3>Heifetz International Music Institute, Summer 2019.</h3>
+                <p>Attended summer music institute as a student of Timothy Eddy, Hans Jørgen Jensen, Steven Doane, Rosemary Elliott and Amit Peled; studied chamber music with members of the Borromeo and Emerson Quartets.</p>
+                <h3>Madeline Island Chamber Music, Summer 2018.</h3>
+                <p>Attended summer music institute; studied with the Arianna, Brooklyn Rider and Jupiter String Quartets.</p>
+                <h3>Musicalta, Summer 2018.</h3>
+                <p>Attended summer music festival as a student of Claudio Pasceri.</p>
+                <h3>Meadowmount School of Music, Summer 2017.</h3>
+                <p>Attended summer music institute; studied with Jonathan Koh.</p>
+                <h2>Honors</h2>
+                <ul>
+                    <li>
+                        <h3>International Honors</h3>
+                        <ul>
+                            <li>Bellagrande International Music Competition, age 16-18 division, cello – 2nd place winner, December 2020</li>
+                            <li>American Protégé International Competition of Romantic Music winner, performance at Weill Recital Hall at Carnegie Hall, April 2019</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>State Honors</h3>
+                        <ul>
+                            <li>Colorado Young Sinfonia Concerto Competition, senior division – 1st place winner, March 2019</li>
+                            <li>Young Musicians Foundation of Colorado (annual grant and performance opportunities) – 2014-16</li>
+                            <li>EOP Competition, Metro State University – 1st place winner: alumni division, March 2019; senior division, November 2017; junior division, November 2016</li>
+                            <li>Boulder Philharmonic Youth Concerto Competition – 2nd place winner, January 2020</li>
+                            <li>Denver Young Artists Orchestra Concerto Competition, runner up – December 2019</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="content1">
+                <h2 style="padding-top:40px">Shostakovich Cello Concerto No. 1 in E&#9837; Major, Op. 107, I. Allegretto</h2>
+                <iframe width="1000" height="650" src="https://www.youtube.com/embed/LVoo0GQb3D4"></iframe>
+            </div>
+        </div>
+        <div id="footer"></div>
+        <script>
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footer").innerHTML = data;
+                });
+        </script>
+    </body>
+</html>
