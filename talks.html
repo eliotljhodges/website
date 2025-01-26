@@ -12,21 +12,20 @@
         <div class="main">
             <!-- Include header from external file -->
             <div id="jumbotron">
-                <script>
-                    fetch("header.html")
-                      .then(response => response.text())
-                      .then(data => {
-                        document.getElementById("jumbotron").innerHTML = data;
-                  
-                        // Highlight the current tab
-                        const links = document.querySelectorAll('#jumbotron a');
-                        links.forEach(link => {
-                          if (link.href === window.location.href) {
-                            link.classList.add('active');
-                          }
-                        });
-                      });
-                  </script>
+                <div class="container-fluid" style="display: flex; justify-content: space-between; align-items: center;">
+                    <div class="row" style="flex: 1;">
+                        <div style="text-align: left; padding-left: 0;">
+                            <h1><a href="index.html">Eliot Hodges</a></h1>
+                        </div>
+                        <div style="display: flex; justify-content: right; flex: 1;">
+                            <h1 style="margin: 0 10px;"><a href="research.html">Research</a></h1>
+                            <h1 style="margin: 0 10px;"><a href="notes.html">Notes</a></h1>
+                            <h1 style="margin: 0 10px;"><a href="talks.html">Talks</a></h1>
+                            <h1 style="margin: 0 10px;"><a href="cello.html">Cello</a></h1>
+                            <!--<h1 style="margin: 0 10px;"><a href="miscellaneous.html">Miscellaneous</a></h1>-->
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div id="sidebar">
@@ -61,8 +60,8 @@
             </div>
         </div>
         <footer>
-            <div class="main">
-                © 2021 Eliot Hodges
+            <div class="main" style="text-align: left; padding: 0;">
+                © 2025 Eliot Hodges | <a href="index.html">Homepage</a>
             </div>
         </footer>
     </body>
