@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /LICENSE
+Disallow: /CNAME
+
+Sitemap: https://www.eliothodges.com/sitemap.xml
