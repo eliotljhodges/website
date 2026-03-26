@@ -61,9 +61,13 @@
         <div id="footer"></div>
         <footer>
             <div class="main" style="text-align: left; padding: 0;">
-                © 2025 Eliot Hodges | <a href="index.html">Homepage</a>
+                &copy; <span id="copyright-year"></span> Eliot Hodges | <a href="index.html">Homepage</a>
             </div>
         </footer>
+        
+        <script>
+            document.getElementById("copyright-year").textContent = new Date().getFullYear();
+        </script>
 
     </div>
 </body>
